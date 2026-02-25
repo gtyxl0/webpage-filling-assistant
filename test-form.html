@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>表单测试页面</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      padding: 8px;
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 30px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>网页填写助手 - 测试表单</h1>
+  <form>
+    <div class="form-group">
+      <label for="username">用户名</label>
+      <input type="text" id="username" name="username" placeholder="请输入用户名">
+    </div>
+
+    <div class="form-group">
+      <label for="email">邮箱</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">手机号</label>
+      <input type="tel" id="phone" name="phone" placeholder="13800138000">
+    </div>
+
+    <div class="form-group">
+      <label for="address">地址</label>
+      <textarea id="address" name="address" rows="3" placeholder="请输入地址"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="city">城市</label>
+      <select id="city" name="city">
+        <option value="">请选择</option>
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+        <option value="guangzhou">广州</option>
+        <option value="shenzhen">深圳</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>性别</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male" style="width: auto; font-weight: normal;">男</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female" style="width: auto; font-weight: normal;">女</label>
+    </div>
+
+    <div class="form-group">
+      <label>爱好</label>
+      <input type="checkbox" id="reading" name="hobby" value="reading">
+      <label for="reading" style="width: auto; font-weight: normal;">阅读</label>
+      <input type="checkbox" id="sports" name="hobby" value="sports">
+      <label for="sports" style="width: auto; font-weight: normal;">运动</label>
+    </div>
+
+    <div class="form-group">
+      <button type="submit">提交</button>
+    </div>
+  </form>
+</body>
+</html>
